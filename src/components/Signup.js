@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default function Signup() {
+const clickForSignup = ()=>{
+  console.log("click signup");
+}
+
   return (
   <>
       <div className="container my-5" style={{maxWidth:"986px"}} >
@@ -12,7 +16,7 @@ export default function Signup() {
                 <div className="row my-3">
                   <div className="col">
                     <center>
-                      <img style={{ width: "150px" }} src="asset/imgs/sign-up.png" />
+                      <img style={{ width: "150px" }} src="asset/imgs/sign-up.png" alt="user" />
                     </center>
                   </div>
                 </div>
@@ -34,35 +38,35 @@ export default function Signup() {
                   <div className="col">
                     <div className="row mb-3">
                       <div className="col-md-6">
-                        <label for="inputEmail4">First Name</label>
+                        <label htmlFor="inputEmail4">First Name</label>
                         <input type="text" className="form-control" placeholder="First name" />
                       </div>
                       <div className="col-md-6">
-                        <label for="inputEmail4">Last Name</label>
+                        <label htmlFor="inputEmail4">Last Name</label>
 
                         <input type="text" className="form-control" placeholder="Last name" />
                       </div>
                     </div>
                     <div className="row mb-3">
                       <div className="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
+                        <label htmlFor="inputEmail4">Email</label>
                         <input type="email" className="form-control" id="inputEmail4" />
                       </div>
                       <div className="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
+                        <label htmlFor="inputPassword4">Password</label>
                         <input type="password" className="form-control" id="inputPassword4" />
                       </div>
                     </div>
                     <div className='mb-3'>
                       <div className="form-group">
-                      <label for="inputAddress">Address</label>
+                      <label htmlFor="inputAddress">Address</label>
                       <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
                     </div>
                     </div>
                     <div className="row mb-3">
-                    <div class="form-group col-md-6">
-    <label for="exampleFormControlSelect1">Gender</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+                    <div className="form-group col-md-6">
+    <label htmlFor="exampleFormControlSelect1">Gender</label>
+    <select className="form-control" id="exampleFormControlSelect1">
       <option>Male</option>
       <option>Female</option>
       <option>Others</option>
@@ -70,18 +74,18 @@ export default function Signup() {
     </select>
   </div>
   <div className="form-group col-md-6">
-                        <label for="inputPassword4">Phone Number</label>
+                        <label htmlFor="inputPassword4">Phone Number</label>
                         <input type="bigInt" className="form-control" id="inputPassword4" />
                       </div>
                     </div>
 
                     <div className="row mb-5">
                       <div className="form-group col-md-6">
-                        <label for="inputCity">City</label>
+                        <label htmlFor="inputCity">City</label>
                         <input type="text" className="form-control" id="inputCity" />
                       </div>
                       <div className="form-group col-md-4">
-                        <label for="inputState">State</label>
+                        <label htmlFor="inputState">State</label>
                         <select id="inputState" className="form-control">
                           <option selected>Choose...</option>
                           <option>Pakistan</option>
@@ -89,12 +93,12 @@ export default function Signup() {
                         </select>
                       </div>
                       <div className="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
+                        <label htmlFor="inputZip">Zip</label>
                         <input type="numeric" className="form-control" id="inputZip" />
                       </div>
                     </div>
 
-                    <button type="submit" className="btn btn-block btn-lg btn-primary">Sign in</button>
+                    <button type="submit" onClick={clickForSignup} className="btn btn-block btn-lg btn-primary">Sign in</button>
                   </div>
                 </div>
 
