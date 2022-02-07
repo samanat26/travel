@@ -1,12 +1,17 @@
 import './App.css';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Acc from './components/Acc';
+// import Protector from './components/Protector';
+import Ticket from './components/Ticket';
+// import TemporaryBooking from './components/TemporaryBooking';
+// import Visa from './components/Visa';
 
 function App() {
   return(
-   
-    // <Signup/>
-    <Login/>
+  //  <Protector/>
+  // <Visa/>
+    // <TemporaryBooking/>
+    // <Ticket/>
+    <Acc/>
   )
 
 }
